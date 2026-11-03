@@ -24,7 +24,7 @@
 
 ### 옆집 강아지
 
-![운영 중](https://img.shields.io/badge/%EC%9A%B4%EC%98%81_%EC%A4%91-2EA44F?style=flat-square) · 개인 프로젝트 · [서비스 둘러보기](https://dogwalk.changhyon.dev) · [GitHub](https://github.com/ckdgus222/Dog-walk)
+![운영 중](https://img.shields.io/badge/%EC%9A%B4%EC%98%81_%EC%A4%91-2EA44F?style=flat-square) ![개인 프로젝트](https://img.shields.io/badge/%EA%B0%9C%EC%9D%B8_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-555555?style=flat-square) [![서비스 둘러보기](https://img.shields.io/badge/%EC%84%9C%EB%B9%84%EC%8A%A4_%EB%91%98%EB%9F%AC%EB%B3%B4%EA%B8%B0-0969DA?style=flat-square&logo=googlechrome&logoColor=white)](https://dogwalk.changhyon.dev) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/ckdgus222/Dog-walk)
 
 동네 반려인과 산책 친구를 이어 주는 서비스입니다. 기획과 디자인부터 서버와 화면 개발, 배포와 운영까지 혼자 맡았습니다.
 
@@ -43,7 +43,7 @@
 
 ### Code Learning
 
-![macOS 앱](https://img.shields.io/badge/macOS_%EC%95%B1-555555?style=flat-square) · [GitHub](https://github.com/ckdgus222/code-learning)
+![macOS 앱](https://img.shields.io/badge/macOS_%EC%95%B1-555555?style=flat-square) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/ckdgus222/code-learning)
 
 처음 보는 TypeScript와 JavaScript 프로젝트를 실제 코드와 줄 위치를 따라 이해하는 읽기 전용 데스크톱 앱입니다.
 
@@ -53,7 +53,7 @@
 
 ### Client Review
 
-![개발 중](https://img.shields.io/badge/%EA%B0%9C%EB%B0%9C_%EC%A4%91-F59E0B?style=flat-square) · [GitHub](https://github.com/ckdgus222/client-review)
+![개발 중](https://img.shields.io/badge/%EA%B0%9C%EB%B0%9C_%EC%A4%91-F59E0B?style=flat-square) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/ckdgus222/client-review)
 
 외주 개발자가 올린 화면 사진 위에 클라이언트가 수정 요청을 남기고, 지정된 승인자가 버전을 승인하는 검수 서비스를 만들고 있습니다.
 
