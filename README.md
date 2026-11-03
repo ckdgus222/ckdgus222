@@ -16,52 +16,54 @@
 
 <br>
 
-## 🚀 Projects
+## About
 
-### 🐶 옆집 강아지
+병동 모니터링 화면을 개발하며, 화면 갱신이 늦거나 값이 어긋나는 문제가 서버 API와 데이터 흐름에 연결되어 있다는 걸 알게 됐습니다. 네트워크 요청과 데이터가 흐르는 경로를 따라가며 문제를 해결하다 보니 서버 개발에도 관심이 생겼습니다. 이후 Node.js와 NestJS를 공부하고, 외주 프로젝트에서 고객 관리와 알림 자동화 기능을 직접 만들었습니다.
+
+## Projects
+
+### 옆집 강아지
 
 ![운영 중](https://img.shields.io/badge/%EC%9A%B4%EC%98%81_%EC%A4%91-2EA44F?style=flat-square) · 개인 프로젝트 · [서비스 둘러보기](https://dogwalk.changhyon.dev) · [GitHub](https://github.com/ckdgus222/Dog-walk)
 
-동네 반려인과 산책 친구를 이어 주는 서비스로, **기획·디자인부터 백엔드·프론트엔드 개발, 배포·운영까지 혼자 진행**했습니다.
+동네 반려인과 산책 친구를 이어 주는 서비스입니다. 기획과 디자인부터 서버와 화면 개발, 배포와 운영까지 혼자 맡았습니다.
+
+같은 이웃에게 산책 요청을 동시에 보내면 요청이 두 개 생길 수 있었습니다. 그래서 "두 사람 사이에 대기 중인 요청은 하나만"이라는 규칙을 DB 제약(부분 유니크 인덱스)으로 걸었습니다. 코드가 아니라 DB가 막기 때문에, 요청이 동시에 들어와도 하나만 남습니다.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ckdgus222/Dog-walk/main/.github/assets/map.jpg" alt="주변 산책 친구 지도" width="49%" />
   <img src="https://raw.githubusercontent.com/ckdgus222/Dog-walk/main/.github/assets/chat.jpg" alt="산책 채팅" width="49%" />
 </p>
 
-- **API·위치 검색:** NestJS·Prisma로 API를 만들고, PostgreSQL·PostGIS로 1km 안의 이웃을 거리순으로 찾습니다.
-- **동시 요청 처리:** 같은 두 사람의 대기 중인 산책 요청은 DB 제약으로 하나만 허용하고, 반려견 삭제·사진 교체는 DB 잠금으로 보호합니다.
-- **인증·실시간 통신:** 로그인 인증과 산책 요청이 수락된 두 사용자만 대화하는 Socket.IO 채팅을 구현했습니다.
-- **배포·운영:** 집 데스크톱의 Ubuntu Server에 Docker Compose로 배포하고, HTTPS·DB 및 사진 백업·업데이트 스크립트를 구성했습니다.
-- **프론트엔드 연결:** Next.js로 지도·채팅·일기·게시판을 만들고, 계정별 TanStack Query 캐시 분리로 이전 사용자 정보 노출을 막았습니다.
+- PostGIS로 1km 안의 이웃을 거리순으로 찾습니다.
+- 산책 요청이 수락된 두 사람만 Socket.IO 채팅을 이용할 수 있습니다.
+- 집 데스크톱의 Ubuntu Server에 Docker Compose로 배포하고, HTTPS, DB와 사진 백업, 업데이트 스크립트까지 직접 구성해 운영합니다.
 
 `Node.js` `NestJS` `PostgreSQL/PostGIS` `Socket.IO` `Next.js` `Docker Compose`
 
-### 🔎 Code Learning
+### Code Learning
 
 ![macOS 앱](https://img.shields.io/badge/macOS_%EC%95%B1-555555?style=flat-square) · [GitHub](https://github.com/ckdgus222/code-learning)
 
-처음 보는 TypeScript·JavaScript 프로젝트를 **실제 코드와 줄 근거를 따라 이해하는 읽기 전용 데스크톱 앱**입니다.
+처음 보는 TypeScript와 JavaScript 프로젝트를 실제 코드와 줄 위치를 따라 이해하는 읽기 전용 데스크톱 앱입니다.
 
-- **코드 탐색:** 화면 → 요청 → 서버 처리 → DB로 이어지는 기능 흐름과 파일 사이의 import 관계를 보여 줍니다.
-- **근거 확인:** 파일 수정·코드 실행 없이 연결의 실제 파일·줄을 표시하고, 불확실한 연결은 ‘추정’으로 구분합니다.
-- **AI 설명:** 선택적으로 함수·파일 설명과 기획 대비 구현 내용을 확인하고, 설명의 근거 코드로 이동합니다.
+화면에서 요청을 보내 서버가 처리하고 DB에 닿기까지의 흐름과, 파일끼리 코드를 불러오는 import 관계를 보여 줍니다. 파일을 수정하거나 코드를 실행하지 않고 연결의 근거가 되는 파일과 줄을 표시하며, 불확실한 연결은 ‘추정’으로 구분합니다. 필요하면 AI로 함수나 파일의 설명, 기획과 구현의 비교 내용을 확인하고 근거 코드로 이동할 수 있습니다.
 
 `Electron` `React` `TypeScript` `Tree-sitter`
 
-### 📝 Client Review
+### Client Review
 
 ![개발 중](https://img.shields.io/badge/%EA%B0%9C%EB%B0%9C_%EC%A4%91-F59E0B?style=flat-square) · [GitHub](https://github.com/ckdgus222/client-review)
 
 외주 개발자가 올린 화면 사진 위에 클라이언트가 수정 요청을 남기고, 지정된 승인자가 버전을 승인하는 검수 서비스를 만들고 있습니다.
 
-현재는 **NestJS·React·Prisma 기본 구조와 Docker 실행 환경을 갖춘 초기 단계**입니다. 화면별 피드백과 버전 승인 흐름을 구현하는 것이 목표입니다.
+현재는 **NestJS, React, Prisma 기본 구조와 Docker 실행 환경을 갖춘 초기 단계**입니다. 화면별 피드백과 버전 승인 흐름을 구현하는 것이 목표입니다.
 
 `NestJS` `React` `PostgreSQL` `Prisma` `Docker Compose`
 
 <br>
 
-## 💼 Experience
+## Experience
 
 ### 외주 개발 · 단독 개발 및 배포
 
@@ -79,15 +81,15 @@
 
 CARE 의료 병동 모니터링 시스템의 프론트엔드를 개발하고 유지보수했습니다.
 
-- **실시간 관제:** React·TypeScript로 Dashboard·Actingboard·Tableboard를 만들고, WebSocket의 초기 전체·이후 변경 데이터를 반영했습니다.
-- **현장 업무 화면:** 환자·침상 배정, 환자 상세, 장치 연결 상태·알림, 의료 리포트·관리자 설정 화면을 구현했습니다.
-- **API 연동:** TanStack Query·Axios로 서버 데이터를 연동하고, 의료 데이터 타입과 예외 처리를 개선했습니다.
+- React와 TypeScript로 Dashboard, Actingboard, Tableboard를 만들었습니다. WebSocket으로 처음에는 전체 데이터를 받고, 이후에는 변경된 데이터를 화면에 반영했습니다.
+- 환자와 침상 배정, 환자 상세, 장치 연결 상태와 알림, 의료 리포트와 관리자 설정 화면을 구현했습니다.
+- TanStack Query와 Axios로 서버 데이터를 연동하고, 의료 데이터 타입과 예외 처리를 개선했습니다.
 
 [실무 경험 자세히 보기 →](https://changhyon.dev/#work)
 
 <br>
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | 영역 | 사용하는 기술 |
 | --- | --- |
