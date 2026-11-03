@@ -1,10 +1,8 @@
 <p align="center">
-  <img src="assets/banner.svg" width="100%" alt="안녕하세요, 개발자 최창현입니다. Node.js 백엔드를 중심으로, 서비스 전체를 만들고 운영합니다." />
-</p>
-
-<p align="center">
-  API·데이터베이스·실시간 통신을 구현하고,<br>
-  프론트엔드 개발부터 배포·운영까지 직접 맡습니다.
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
+    <img src="assets/banner-light.svg" width="100%" alt="안녕하세요, 개발자 최창현입니다. Node.js 백엔드를 중심으로, 서비스 전체를 만들고 운영합니다. API·DB·실시간 통신부터 프론트엔드, 배포·운영까지 직접 맡습니다." />
+  </picture>
 </p>
 
 <p align="center">
